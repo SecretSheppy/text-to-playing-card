@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>Text to Playing Cards</title>
+    <script src="ttpc.js" defer></script>
+</head>
+<body>
+<main class="main">
+    <div class="column-wrapper">
+        <label class="generic-label" for="text-input">Cards Text</label>
+        <p class="description">Enter cards in the form <span class="code">Card {value=Two, suit=Diamond}</span> with values <span class="code">Two .. Ace</span> and suits <span class="code">Diamond .. Club</span></p>
+        <textarea id="text-input" class="generic-input" placeholder="Enter Cards String"></textarea>
+    </div>
+    <div class="column-wrapper">
+        <label class="generic-label" for="text-output">Unicode Playing Cards</label>
+        <p id="text-output" class="large-output"></p>
+    </div>
+</main>
+</body>
+</html>

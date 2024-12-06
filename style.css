@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.column-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.generic-label,
+.description {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.description {
+    font-size: 15px;
+}
+
+.code {
+    font-family: monospace;
+    padding: 3px 5px;
+    border-radius: 3px;
+    background: #e5e5e5;
+    color: #1c1c1c;
+}
+
+.generic-input {
+    padding: 10px;
+    font-size: 15px;
+    height: 300px;
+}
+
+.large-output {
+    text-align: center;
+    font-size: 200px;
+}
