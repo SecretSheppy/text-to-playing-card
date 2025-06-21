@@ -37,6 +37,14 @@ function getCardsFromString(string) {
     return cards;
 }
 
-document.getElementById('text-input').addEventListener('input', (e) => {
-    document.getElementById('text-output').innerText = getCardsFromString(e.target.value);
+let inputEl = document.getElementById('text-input');
+let outputEl = document.getElementById('text-output');
+let previewEl = document.getElementById('card-preview');
+
+const evalCard = (v) => outputEl.innerText = getCardsFromString(v);
+
+inputEl.addEventListener('input', e => evalCard(e.target.value));
+previewEl.addEventListener('click', e => {
+    inputEl.value = inputEl.value + e.target.innerText;
+    evalCard(inputEl.value);
 });
